@@ -1,6 +1,4 @@
 import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
@@ -13,14 +11,16 @@ import Blog from './components/Blog/Blog';
 function App() {
  
 
-const [readtime, setReadtime] = useState(0);
-const [bookmarks, setBookmarks] = useState([]);
-  
+  const [readtime, setreadtime] = useState(0);
 
-  const handleReadTime = (time) => {
-    console.log(time);
-    setReadtime(readtime+time);
-   }
+  const [bookmarks, setBookmarks] = useState([]);
+    
+  
+    const handleReadTime = (time) => {
+      
+      setreadtime(readtime)
+      
+     }
 
    const handleBookMark=(title)=>{
     if (bookmarks.includes(title)) {
