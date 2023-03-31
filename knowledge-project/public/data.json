@@ -5,7 +5,7 @@
     "blogTitle": "The Benefits of Regular Exercise",
     "blogCoverImg": "https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg?auto=compress&cs=tinysrgb&w=600",
     "authorImg": "https://qph.cf2.quoracdn.net/main-thumb-7413633-200-fmuzecggbqawybnyppdfctgsyadqmoqs.jpeg",
-    "readTime": "5 mins read",
+    "readTime": "5",
     "publishDate": "March 14"
   },
   {
@@ -14,7 +14,7 @@
     "blogTitle": "The Benefits of Meditation: How It Can Change Your Life",
     "blogCoverImg": "https://images.pexels.com/photos/3760611/pexels-photo-3760611.jpeg?auto=compress&cs=tinysrgb&w=600",
     "authorImg": "https://qph.cf2.quoracdn.net/main-thumb-337007670-200-hqrqlilzwvwirnrsaqacfdbzrzjlvesi.jpeg",
-    "readTime": "7 mins read",
+    "readTime": "7",
     "publishDate": "March 16"
   },
   {
@@ -23,7 +23,7 @@
     "blogTitle": "Why You Should Travel Alone At Least Once In Your Life",
     "blogCoverImg": "https://images.pexels.com/photos/5227440/pexels-photo-5227440.jpeg?auto=compress&cs=tinysrgb&w=600",
     "authorImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ9RpT7xswe-lXNL5vhTRf5H9FcnEDlLUZ0RpcHnktOyVQJQkPtC9LojzewO-A-43BR&usqp=CAU",
-    "readTime": "8 mins read",
+    "readTime": "8",
     "publishDate": "March 18"
   },
   {
@@ -32,7 +32,7 @@
     "blogTitle": "The Future of Artificial Intelligence",
     "blogCoverImg": "https://images.pexels.com/photos/8721318/pexels-photo-8721318.jpeg?auto=compress&cs=tinysrgb&w=600",
     "authorImg": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT5zgRarzmwDp5GCfd8DDV_uWJy9leoF-mqI2_XNbP6WknH9nbHvRcc5OJAkKeRPUDT&usqp=CAU",
-    "readTime": "8 mins read",
+    "readTime": "18",
     "publishDate": "March 19"
   }
 ]

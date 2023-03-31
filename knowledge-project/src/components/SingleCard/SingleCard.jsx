@@ -1,7 +1,8 @@
 import React from 'react';
 import './SingleCard.css'
+import { BookmarkIcon } from "@heroicons/react/solid";
 
-const SingleCard = ({blog}) => {
+const SingleCard = ({blog,handleReadTime}) => {
     return (
         <div className="mb-5 border-card w-100 m-auto col-md-6">
       
@@ -17,12 +18,18 @@ const SingleCard = ({blog}) => {
         </div>
       </div>
       <div className="timeAndRating d-flex justify-content-around ">
-        <small className='m-3'>{blog.readTime}</small>
-        <button>bookmark</button>
+        <small className='m-3'>{blog.readTime} min read</small>
+        <button className="flex items-center space-x-1 bg-white text-gray-800  rounded-md hover:bg-gray-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-500">
+      <BookmarkIcon className="h-1 w-1" />
+      <span>Bookmark</span>
+    </button>
+    
+    
         </div>
       </div>
       <h3>{blog.blogTitle}</h3>
-      <a href="#">Mark as read</a>
+      <button onClick={()=>handleReadTime(blog.readTime)}>Mark as read</button>
+      
     </div>
     );
 };
