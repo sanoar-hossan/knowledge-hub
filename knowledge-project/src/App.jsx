@@ -1,7 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
-
+import { toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/Header/Header';
@@ -22,7 +23,12 @@ const [bookmarks, setBookmarks] = useState([]);
    }
 
    const handleBookMark=(title)=>{
-    setBookmarks((bookmarks) => [...bookmarks, title]);
+    if (bookmarks.includes(title)) {
+      toast.error('Bookmark already exists!');
+    } else {
+      setBookmarks([...bookmarks, title]);
+      toast.success('Bookmark added!');
+    }
    }
 
   return (
