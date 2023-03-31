@@ -13,13 +13,17 @@ function App() {
  
 
 const [readtime, setReadtime] = useState(0);
+const [bookmarks, setBookmarks] = useState([]);
   
 
   const handleReadTime = (time) => {
-    setReadtime(time);
-   
+    console.log(time);
+    setReadtime(readtime+time);
+   }
 
- }
+   const handleBookMark=(title)=>{
+    setBookmarks((bookmarks) => [...bookmarks, title]);
+   }
 
   return (
     <div className="App">
@@ -31,10 +35,10 @@ const [readtime, setReadtime] = useState(0);
       
       <div className="main row container">
         <div className=" col-md-8">
-        <Home handleReadTime={handleReadTime}  ></Home>
+        <Home handleReadTime={handleReadTime} handleBookMark={handleBookMark}  ></Home>
         </div>
         <div className="sideCart col-md-4 card">
-         <Sidebar readtime={readtime} ></Sidebar>
+         <Sidebar readtime={readtime} bookmarks={bookmarks} ></Sidebar>
         </div>
         <Blog></Blog>
       </div>

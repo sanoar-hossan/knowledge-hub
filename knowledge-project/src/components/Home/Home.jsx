@@ -1,7 +1,8 @@
 import React, { useEffect, useState } from 'react';
 import SingleCard from '../SingleCard/SingleCard';
+import Sidebar from '../Sidebar/Sidebar';
 
-const Home = ({handleReadTime}) => {
+const Home = ({handleReadTime,handleBookMark}) => {
     
     const [blogs,setblogs]=useState([])
 useEffect(()=>{
@@ -16,8 +17,10 @@ useEffect(()=>{
         <div>
             {
                 
-                blogs.map(blog=><SingleCard key={blog.blogId} blog={blog} handleReadTime={handleReadTime}></SingleCard>)
+                blogs.map(blog=><SingleCard key={blog.blogId} blog={blog} handleReadTime={handleReadTime} handleBookMark={handleBookMark}></SingleCard>)
             }
+
+            
             
         </div>
     );

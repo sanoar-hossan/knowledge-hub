@@ -1,6 +1,6 @@
 import React from 'react';
 
-const Sidebar = ({readtime,}) => {
+const Sidebar = ({readtime,bookmarks}) => {
  
 
    
@@ -12,8 +12,10 @@ const Sidebar = ({readtime,}) => {
       </div>
       <div className="bookmark">
         <h1>Bookmarked Blogs:</h1>
-        <div className='card'>
-
+        <div className=''>
+        {bookmarks.map((bookmark) => (
+            <div className='card mb-3' key={bookmark}>{bookmark}</div>
+          ))}
             
         </div>
       </div>
