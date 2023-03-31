@@ -1,0 +1,8 @@
+.img-author{
+    width: 40px;
+    height: 40px;
+}
+.border-card{
+    border-bottom: 2px solid lightgray;
+    padding-bottom: 25px;
+}
