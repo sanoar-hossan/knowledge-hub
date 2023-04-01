@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { toast } from 'react-toastify';
+import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import './App.css'
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -32,7 +32,7 @@ function App() {
 
   return (
     <div className="App">
-     
+     <ToastContainer />
      
      <div className="header mb-5 ">
         <Header></Header>
