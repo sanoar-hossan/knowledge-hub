@@ -10,18 +10,17 @@ import Blog from './components/Blog/Blog';
 
 function App() {
  
-
-  const [readtime, setreadtime] = useState(0);
-
-  const [bookmarks, setBookmarks] = useState([]);
+  const [readTime, setTime] = useState(0);
+   
+  const handleReadTime = (time) => {
     
-  
-    const handleReadTime = (time) => {
-      
-      setreadtime(readtime)
-      
-     }
+    setTime(parseInt(time)+readTime);
+    
+  };
 
+
+
+   const [bookmarks, setBookmarks] = useState([]);
    const handleBookMark=(title)=>{
     if (bookmarks.includes(title)) {
       toast.error('Bookmark already exists!');
@@ -35,16 +34,16 @@ function App() {
     <div className="App">
      
      
-     <div className="header container  m-auto mb-3 ">
+     <div className="header mb-5 ">
         <Header></Header>
       </div>
       
-      <div className="main row container">
-        <div className=" col-md-8">
+      <div className="main row">
+        <div className="home col-md-8">
         <Home handleReadTime={handleReadTime} handleBookMark={handleBookMark}  ></Home>
         </div>
-        <div className="sideCart col-md-4 card">
-         <Sidebar readtime={readtime} bookmarks={bookmarks} ></Sidebar>
+        <div className="sidebar col-md-4 ">
+         <Sidebar readTime={readTime}bookmarks={bookmarks} ></Sidebar>
         </div>
         <Blog></Blog>
       </div>

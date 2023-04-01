@@ -1,0 +1,12 @@
+.col{
+    border: 2px solid lightblue;
+    margin: 10px;
+    
+}
+.ques{
+    background: #000;
+    color: white;
+}
+.answer{
+    margin-top: 20px;
+}

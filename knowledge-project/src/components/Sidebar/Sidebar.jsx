@@ -1,18 +1,18 @@
 import React from 'react';
+import './sidebar.css'
 
-
-const Sidebar = ({readtime,bookmarks}) => {
+const Sidebar = ({readTime,bookmarks}) => {
  
 
    
 
     return (
-        <div className="sidebar card">
-            <div className="spend-time border container ">
-        <h1 className=''>Spent time on read:{readtime}min</h1>      
+        <div className="sidebar">
+            <div className="spend-time ">
+        <h3 className=''>Spent time on read:{readTime}min</h3>      
       </div>
-      <div className="bookmark card">
-        <h1>Bookmarked Blogs:{bookmarks.length}</h1>
+      <div className="bookmark">
+        <h3 className='bookmark-time'>Bookmarked Blogs:{bookmarks.length}</h3>
         <div className='card-body mb-4'>
         {bookmarks.map((bookmark) => (
             <div className='card mb-3' key={bookmark}>{bookmark}</div>

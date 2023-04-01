@@ -1,0 +1,16 @@
+.navbar-brand{
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+.menu{
+    padding-right: 70px;
+}
+.menu a{
+    text-decoration: none;
+    padding: 0px 10px;
+    color: black;
+}
+.navbar{
+padding-left: 50px;
+}

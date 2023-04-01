@@ -5,7 +5,7 @@ import { toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
 const Home = ({handleReadTime,handleBookMark}) => {
-    const [readtime, setReadtime] = useState(0);
+    
     const [blogs,setblogs]=useState([])
 useEffect(()=>{
     fetch('data.json')

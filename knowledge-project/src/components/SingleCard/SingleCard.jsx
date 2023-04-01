@@ -4,7 +4,7 @@ import { BookmarkIcon } from "@heroicons/react/solid";
 
 const SingleCard = ({blog,handleReadTime,handleBookMark}) => {
     return (
-        <div className="mb-5 border-card w-100 m-auto col-md-6">
+        <div className="mb-5 border card w-100 m-auto col-md-6">
       
         <img className="w-100" src={blog.blogCoverImg} alt="" />
       <div className="area d-flex justify-content-between align-items-center">
@@ -28,7 +28,9 @@ const SingleCard = ({blog,handleReadTime,handleBookMark}) => {
         </div>
       </div>
       <h3>{blog.blogTitle}</h3>
-      <button onClick={()=>handleReadTime(blog.readTime)}>Mark as read</button>
+      
+      <a href="#" onClick={()=>handleReadTime(blog.readTime)}>Mark as read</a>
+      
       
     </div>
     );
